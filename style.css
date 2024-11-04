@@ -1,0 +1,364 @@
+/* 
+/* selectors */
+/* .x1{
+    color:violet;
+
+} */
+
+/* p
+{
+   color:red;
+   font-size:20px;
+   font-family: calibri;
+} */
+/* h1{
+    color:green;
+} */
+/* #p1{ */
+   /* color:brown; */
+/* } */
+
+/* Basic Reset */
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header h1 {
+    display: inline;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;        
+      /* Use flex to arrange items in a row */ 
+
+    gap: 15px;              
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Optional: Add a hover effect */
+    border-radius: 5px;
+}
+
+#hero {
+    background: #eee;
+    padding: 50px;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    margin-bottom: 20px;
+}
+.Arrow{
+    height:200px;
+    width:350px;
+    margin-top: 200px;;
+
+}
+.Success{
+    height:500px;
+    width:600px;
+    margin-bottom: 30px;
+    padding:20px;
+}
+.sta{
+    display:flex;
+    /* height:100px; */
+    /* width:100px; */
+    /* background-color:#a9a0a0; Optional: Add a hover effect */
+    /* background-color: ; */
+}
+.start{
+    height:500px;
+    width:600px;
+    margin-bottom: 20px;
+    padding:20px;
+  
+
+
+}
+.image{
+    /* padding:50px; */
+    height:400px;
+    width:700px;
+
+}
+.practice{
+    display:flex;
+    /* background-color: #a9a0a0; */
+    justify-content: center;
+    align-items: center;
+font-weight: 100;
+color:#2e0328;
+}
+.chal{
+    /* padding:20px; */
+    width:10px;
+    height: 100px;
+
+}
+.ch{
+    width:400px;
+    /* background-color: #a9a0a0; */
+    height: 300px;
+    margin-top: 80px;
+
+}
+.Challenges{
+    margin-left: 50px;
+    /* background-color: #a9a0a0; */
+    /* font-size: 20px; */
+    /* display: flex; */
+    justify-content: center; 
+   align-items: center;
+
+}
+.te{
+    /* background-color: #a9a0a0; */
+    font-size:20px;
+    /* display:flex; */
+    margin-left: 500px;
+    /* padding:10px; */
+
+    
+}
+.so{
+    width:10px;
+    height: 100px;
+}
+.sol{
+    width:400px;
+    height: 300px;
+    margin-top: 80px;
+
+}
+.solution{
+    margin-left: 50px;
+    /* font-size: 20px; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+
+    /* display:flex; */
+   
+
+}
+.solutions{
+    font-size:20px;
+    /* display:flex; */
+    margin-top:50px;
+    margin-left: 500px;
+    /* padding:10px; */
+
+}
+.ben{
+    padding:50px;
+    /* margin-top: 100px; */
+    margin-left:160px;
+    width:500px;
+    height:400px;
+    display:flex;
+    
+}
+.ben1{
+    padding:50px;
+    margin-top: 100px;
+    /* margin-left:1000px; */
+    width:500px;
+    height:400px;
+    /* display:flex; */
+    cursor: pointer;
+}
+.bene{
+    display: flex;
+}
+.com{
+    display:flex;
+    font-size: 20px;
+    margin-top:100px;
+    column-gap: 50px;
+    /* row-gap:50px; */
+    /* margin-left: 500px; */
+}
+/* .form-container{
+    margin-top: 50px;
+    margin-left: 500px;
+    height:200px;
+    width:1000px;
+    background-color: #fff;
+    padding:20px;
+    row-gap:100px;
+    column-gap: 30px;
+    /* background-color: #a9a0a0; */
+    
+/* }  */
+.form-container {
+    margin-top: 50px;
+    margin-left: 500px;
+    height: 300px;
+    width: 500px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    border-radius: 8px;
+}
+
+/* Center the title */
+.form-container h2 {
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Use grid layout for the form */
+.form-container form {
+    display: grid;
+    row-gap: 15px; /* Spacing between rows */
+    column-gap: 10px; /* Spacing between columns */
+}
+
+/* Style each input field and button */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Style the submit and reset buttons */
+.form-container button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-container button[type="submit"] {
+    background-color: #87b5dd;
+    color: white;
+}
+
+.form-container button[type="reset"] {
+    background-color: #867f7e;
+    color: white;
+}
+
+.form-container button:hover {
+    opacity: 0.9;
+}
+.Places{
+    width:80%;
+    /* height:400px; */
+    padding:30px 10%;
+    /* background-color: rgb(196, 196, 183); */
+    display:flex;
+    flex-direction:column ;
+    /* justify-content: space-between; */
+    row-gap: 40px;
+}
+.section_title{
+    font-size: 50px;
+    font-family: segoe UI;
+    font-weight: 100;
+}
+.places_container{
+    /* padding-right: 40px; */
+    width:80%;
+    /* height:200px; */
+    /* background-color: red; */
+    /* margin-top:50px; */
+    display:flex;
+column-gap: 40px;
+    justify-content: space-between;
+}
+.place{
+     width:fit-content;
+     /* height:550px; */
+     background-color:rgb(244, 248, 251);
+     
+}
+.place_image{
+    /* height:450px; */
+    width:fit-content;
+    background-color: grey;
+
+}
+.place_img{
+    /* width:100%; */
+    height:500px
+}
+.details{
+    padding: 10px;
+    display:flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: flex-start;
+    font-family:  segoe UI;
+}
+.btn
+{
+    padding: 10px,20px;
+    font-weight:bold;
+     font-family:  segoe UI ;
+    background-color: rgb(24, 29, 23);
+    color:white;
+    border: none; 
+
+}
+.end{
+    margin-bottom: 400px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
