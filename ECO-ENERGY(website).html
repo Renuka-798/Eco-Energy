@@ -1,0 +1,196 @@
+
+<!-- saved from url=(0034)http://127.0.0.1:5500/pseudo.html? -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</head><body>
+ --&gt;
+
+
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECO-ENERGY</title>
+    <link rel="stylesheet" href="./ECO-ENERGY(website)_files/style.css">
+
+
+    <header>
+        <h1>Eco-Energy</h1>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/about.html">About Us</a></li>
+                <li><a href="http://127.0.0.1:5500/services.html">Services</a></li>
+                <li><a href="http://127.0.0.1:5500/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+
+    <section id="hero">
+        <h2>Welcome to Our ECO-ENERGY</h2>
+        <p>Providing quality services that meet your needs.</p>
+        <button onclick="location.href=&#39;services.html&#39;">Our Services</button>
+    </section>
+    <div class="sta">
+        <h1>
+        <img class="start" src="./ECO-ENERGY(website)_files/02b-IMG-20210706-WA0009-PMN.max-1400x1120.jpg">
+       </h1>
+        <img class=" Arrow" src="./ECO-ENERGY(website)_files/traffic-signs-35545s60stdrae-lg_dam_3686725.jpg">
+        <img class=" Success" src="./ECO-ENERGY(website)_files/coriander.webp">
+    </div>
+
+
+    
+    <div class="practice">
+    <img class="image" src="./ECO-ENERGY(website)_files/pexels-photo-440731.jpeg">
+       <h1> "Empowering Farmers, Maximizing Profits, Minimizing Crop Failures" 
+    </h1>
+</div>
+
+    <ul class="Challenges">
+        <h1 class="chal">
+            <img class="ch" src="./ECO-ENERGY(website)_files/bigstock-Challenges-Road-Sign-3530978.jpg">
+        </h1>
+   
+    </ul>
+    <div class="te">
+        <li>High Volume of Waste: Farmers often produce a substantial amount of organic waste, including crop residues, fruit and vegetable scraps, and livestock manure. This waste can lead to environmental issues if not managed properly.
+        </li>
+        <li>Soil Degradation: Poor soil health due to erosion, nutrient depletion, and chemical contamination can result in reduced crop productivity.
+
+        </li>
+        <li>Greenhouse Gas Emissions: Decomposing organic waste in landfills can produce methane, a potent greenhouse gas, contributing to climate change.
+        </li>
+       
+        <li>Food Insecurity: Reduced agricultural output contributes to food shortages and increased prices, affecting food availability and access for communities, especially the vulnerable populations.</li>
+    </div> 
+    <ul class="solution">
+        <h2 class="so">
+        <img class="sol" src="./ECO-ENERGY(website)_files/IMG_ORG_1577271437572.jpeg">
+    </h2>
+    </ul>
+    <!-- <img  class="sol"src="https://lh3.googleusercontent.com/-Sc2ssrD9vSw/XgNAlzBRIcI/AAAAAAAABh8/hdeQycdFOXEufjFDE-pTikxiun3EGrhMwCLcBGAsYHQ/s1600/IMG_ORG_1577271437572.jpeg"> -->
+    <div class="solutions">
+        <li>Composting: Farmers can compost organic waste to create nutrient-rich fertilizers, improving soil health and reducing waste disposal issues.
+            
+        </li>
+        <li>Crop Rotation: These practices can help utilize organic waste effectively by returning nutrients to the soil and improving its structure.
+        </li>
+        <li>
+            Soil Health Practices: Implementing practices such as reduced tillage, organic amendments, and soil conservation can enhance soil fertility and productivity. 	
+        </li>
+    </div>
+    <div>
+    <div class="bene">
+        <img class="ben1" src="data:image/png;base64,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">
+        <ul class="com">
+            <li>Enhanced Fertility: Compost enriches the soil with essential nutrients, including nitrogen, phosphorus, and potassium, which are crucial for plant growth.</li>
+          <li>Improved Soil Structure: Compost improves soil texture, promoting better aeration and drainage, which helps root development and moisture retention.</li>
+        <li>
+            Reduced Fertilizer Costs: Using compost can decrease the reliance on synthetic fertilizers, lowering input costs for farmers and gardeners.
+        </li>
+        </ul>
+        <div>
+        <img class="ben" src="./ECO-ENERGY(website)_files/benefits-5-5084.gif">
+    </div>
+    </div>
+</div>
+<div class="form-container">
+    <h2>User Registration</h2>
+    <form>
+        <input type="text" placeholder="Enter Name" required="">
+        <input type="email" placeholder="Enter Email" required="">
+        <input type="password" placeholder="Enter Password" required="">
+        <button type="submit">Register</button>
+        <button type="reset">Clear</button>
+    </form>
+</div>
+<section class="Places">
+    <h1 class="section_title">Team</h1>
+    <div class="places_container">
+       <div class="place">
+           <div class="place_image">
+               <img src="./ECO-ENERGY(website)_files/renuka.jpg" class="place_img" alt="jungle">
+           </div>
+           <div class="details">
+               <h2>NAME:Renuka</h2>
+               <p>CEO</p>
+               <button class="btn">Explore More</button>
+           </div>
+       </div>
+       <div class="place">
+        <div class="place_image">
+            <img src="./ECO-ENERGY(website)_files/vaishnavi.jpg" class="place_img" alt="jungle">
+        </div>
+        <div class="details">
+            <h2>NAME:Vaishnavi</h2>
+            <p>CTO</p>
+            <button class="btn">Explore More</button>
+        </div>
+    </div>
+    <div class="place">
+        <div class="place_image">
+            <img src="./ECO-ENERGY(website)_files/navya.jpg" class="place_img" alt="jungle">
+        </div>
+        <div class="details">
+            <h2>NAME:Navya</h2>
+            <p>CMO</p>
+            <button class="btn">Explore More</button>
+        </div>
+    </div>
+    
+    </div>
+</section>
+<div>
+
+</div>
+<div class="end">
+    <h1>
+
+        <li>For any Quiries Contact-ecoenergy@gmail.com</li>
+        <li>FollowUs on insta-ECo-Eneregy</li>
+        <li>Contact no- +91 7981969065</li>
+
+    </h1>
+</div>
+ 
+
+    <footer>
+        <p>© 2024 ECO-ENERGY</p>
+    </footer>
+<!-- Code inject--></body></html>
